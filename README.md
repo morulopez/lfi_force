@@ -16,11 +16,11 @@
 - curl
 - Python 3 (for URL decoding)
 
+## Demo
+
+![Proof](images/proof.png)
+
 ## Usage
 
 ```bash
 ./lfi_force.sh -u URL_BASE [-P PREFIX] [-c "cookie"] [-k] [-s linux|windows]
-
-## Demo
-
-![Proof](images/proof.png)
