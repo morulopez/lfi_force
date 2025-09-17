@@ -20,3 +20,7 @@
 
 ```bash
 ./lfi_force.sh -u URL_BASE [-P PREFIX] [-c "cookie"] [-k] [-s linux|windows]
+
+## Demo
+
+![Proof](images/proof.png)
