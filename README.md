@@ -18,7 +18,7 @@
 
 ## Demo
 
-![Proof](images/proof.png)
+![Proof](proof.png)
 
 ## Usage
 
