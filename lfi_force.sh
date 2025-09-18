@@ -51,7 +51,7 @@ if [ -z "$URL" ]; then
   exit 1
 fi
 
-# valida SO
+# valid OS
 if [[ "$SO" != "linux" && "$SO" != "windows" ]]; then
   echo -e "\n${RED}ERROR: -s must be 'linux' or 'windows'.${RESET}\n"
   usage
@@ -194,7 +194,7 @@ process_output(){
 echo -e "\n${CYAN}LFI Exploitation Tool:${RESET} Attempts to retrieve /etc/passwd (Linux) or win.ini (Windows) by testing multiple payloads.\n"
 
 
-# iterar: por cada payload relativo probamos (A) payload y (B) PREFIX+payload (si PREFIX existe)
+# iterate: for each relative payload we try (A) payload and (B) PREFIX+payload (if PREFIX exists)
 for rel in "${payloads[@]}"; do
   # variant A: no prefix
   for variant in "${rel}" "${PREFIX}${rel}"; do
